@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "vedaverse",
+  "builds": [
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/build/$1"
+    },
+    {
+      "src": "/.*",
+      "dest": "/build/index.html"
+    }
+  ]
+}

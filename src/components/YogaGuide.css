@@ -1,0 +1,428 @@
+.yoga-guide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.yoga-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.yoga-header h1 {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-pitta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+}
+
+.yoga-header p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Dosha Selector */
+.dosha-selector {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-3xl);
+  flex-wrap: wrap;
+}
+
+.dosha-btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border: 2px solid;
+  border-radius: var(--border-radius-xl);
+  background: transparent;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  min-width: 120px;
+}
+
+.dosha-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.dosha-btn.active {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Practice Header */
+.practice-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.practice-banner {
+  position: relative;
+  height: 300px;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+}
+
+.practice-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.practice-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+  padding: var(--spacing-3xl) var(--spacing-xl) var(--spacing-xl);
+  text-align: center;
+}
+
+.practice-overlay h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.practice-overlay p {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Practice Principles */
+.practice-principles {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-light);
+  margin-bottom: var(--spacing-xl);
+}
+
+.practice-principles h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.principle-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--light-gray);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-medium);
+}
+
+.principle-card:hover {
+  background: var(--background-color);
+  transform: translateY(-2px);
+}
+
+.principle-icon {
+  font-size: var(--font-size-xl);
+}
+
+/* Practice Sections */
+.practice-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.asanas-section,
+.breathing-section,
+.meditation-section {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-light);
+}
+
+.asanas-section h3,
+.breathing-section h3,
+.meditation-section h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.asanas-section h3::before {
+  content: '🧘‍♂️';
+}
+
+.breathing-section h3::before {
+  content: '🌬️';
+}
+
+.meditation-section h3::before {
+  content: '🧘‍♀️';
+}
+
+/* Asanas Grid */
+.asanas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.asana-card {
+  background: var(--light-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent-kapha);
+  transition: all var(--transition-medium);
+}
+
+.asana-card:hover {
+  background: var(--background-color);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-light);
+}
+
+.asana-card h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.asana-details p {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.asana-details p:last-child {
+  margin-bottom: 0;
+}
+
+.asana-details strong {
+  color: var(--text-primary);
+}
+
+/* Breathing Grid */
+.breathing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.breathing-card {
+  background: var(--light-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent-pitta);
+  transition: all var(--transition-medium);
+}
+
+.breathing-card:hover {
+  background: var(--background-color);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-light);
+}
+
+.breathing-card h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.breathing-card p {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.breathing-card p:last-child {
+  margin-bottom: 0;
+}
+
+.breathing-card strong {
+  color: var(--text-primary);
+}
+
+/* Meditation Section */
+.meditation-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--background-color), var(--light-gray));
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent-vata);
+}
+
+.meditation-icon {
+  font-size: var(--font-size-4xl);
+  min-width: 60px;
+}
+
+.meditation-card p {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Practice Tips */
+.practice-tips {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-light);
+  margin-top: var(--spacing-xl);
+}
+
+.practice-tips h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+.tips-content {
+  background: var(--light-gray);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+}
+
+.tips-list p {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.tips-list p:last-child {
+  margin-bottom: 0;
+}
+
+/* Disclaimer */
+.yoga-disclaimer {
+  background: linear-gradient(135deg, #FFF8E1, #F5F5F5);
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent-vata);
+  text-align: center;
+}
+
+.yoga-disclaimer p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .yoga-guide {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  
+  .yoga-header h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .dosha-selector {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  
+  .dosha-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .practice-banner {
+    height: 200px;
+  }
+  
+  .practice-overlay h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .practice-overlay p {
+    font-size: var(--font-size-base);
+  }
+  
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .asanas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .breathing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .meditation-card {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+  
+  .practice-principles,
+  .asanas-section,
+  .breathing-section,
+  .meditation-section,
+  .practice-tips {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .yoga-header h1 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .practice-banner {
+    height: 160px;
+  }
+  
+  .practice-overlay {
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+  }
+  
+  .practice-overlay h2 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .asana-card,
+  .breathing-card {
+    padding: var(--spacing-md);
+  }
+  
+  .meditation-card {
+    padding: var(--spacing-md);
+  }
+  
+  .meditation-icon {
+    font-size: var(--font-size-3xl);
+  }
+}

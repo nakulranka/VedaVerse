@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VedaVerse - AI-Powered Ayurvedic Healthcare</title>
+    <meta name="description" content="Discover personalized Ayurvedic healthcare with AI-powered recommendations, Prakriti analysis, and expert consultations.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        #root {
+            min-height: 100vh;
+        }
+        
+        /* Loading styles */
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e0e0e0;
+            border-top: 4px solid #2e7d32;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Hide loading once React loads */
+        .app-loaded .loading-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+    
+    <script>
+        // Add class when app loads
+        window.addEventListener('load', function() {
+            document.body.classList.add('app-loaded');
+        });
+    </script>
+</body>
+</html>

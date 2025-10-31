@@ -1,18 +1,39 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ currentView, onNavigate }) => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
+        <div className="logo" onClick={() => onNavigate('welcome')}>
           <span className="logo-symbol">🕉️</span>
           <span className="logo-text">Veda Verse</span>
         </div>
         <nav className="nav-menu">
-          <a href="#about" className="nav-link">About</a>
-          <a href="#ayurveda" className="nav-link">Ayurveda</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <button 
+            className={`nav-link ${currentView === 'welcome' ? 'active' : ''}`}
+            onClick={() => onNavigate('welcome')}
+          >
+            Home
+          </button>
+          <button 
+            className={`nav-link ${currentView === 'quiz' ? 'active' : ''}`}
+            onClick={() => onNavigate('quiz')}
+          >
+            Prakriti Quiz
+          </button>
+          <button 
+            className={`nav-link ${currentView === 'herbs' ? 'active' : ''}`}
+            onClick={() => onNavigate('herbs')}
+          >
+            Herbs Guide
+          </button>
+          <button 
+            className={`nav-link ${currentView === 'yoga' ? 'active' : ''}`}
+            onClick={() => onNavigate('yoga')}
+          >
+            Yoga
+          </button>
         </nav>
       </div>
     </header>

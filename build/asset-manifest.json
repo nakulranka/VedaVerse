@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.93d14f05.css",
-    "main.js": "/static/js/main.d03ed6a1.js",
-    "index.html": "/index.html",
-    "main.93d14f05.css.map": "/static/css/main.93d14f05.css.map",
-    "main.d03ed6a1.js.map": "/static/js/main.d03ed6a1.js.map"
+    "main.css": "/VedaVerse/static/css/main.e3f1f72a.css",
+    "main.js": "/VedaVerse/static/js/main.4a58b07c.js",
+    "index.html": "/VedaVerse/index.html",
+    "main.e3f1f72a.css.map": "/VedaVerse/static/css/main.e3f1f72a.css.map",
+    "main.4a58b07c.js.map": "/VedaVerse/static/js/main.4a58b07c.js.map"
   },
   "entrypoints": [
-    "static/css/main.93d14f05.css",
-    "static/js/main.d03ed6a1.js"
+    "static/css/main.e3f1f72a.css",
+    "static/js/main.4a58b07c.js"
   ]
 }

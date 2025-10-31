@@ -1,18 +1,29 @@
 {
-  "name": "prakriti-analyzer",
+  "name": "vedaverse-webapp",
   "version": "1.0.0",
-  "description": "Know Your Body Type - Ayurvedic Prakriti Analysis Quiz",
+  "description": "VedaVerse - AI-Powered Ayurvedic Healthcare Platform",
   "main": "index.js",
+  "homepage": "https://nakulranka.github.io/VedaVerse",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "@mui/material": "^5.14.0",
+    "@mui/icons-material": "^5.14.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/x-date-pickers": "^6.10.0",
+    "firebase": "^10.1.0",
+    "react-router-dom": "^6.14.0",
+    "date-fns": "^2.30.0"
   },
   "browserslist": {
     "production": [

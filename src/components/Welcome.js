@@ -1,7 +1,7 @@
 import React from 'react';
 import './Welcome.css';
 
-const Welcome = ({ onStartQuiz }) => {
+const Welcome = ({ onStartQuiz, onNavigate }) => {
   return (
     <div className="welcome-container">
       <div className="welcome-content">
@@ -36,6 +36,32 @@ const Welcome = ({ onStartQuiz }) => {
             <h3>Kapha</h3>
             <p>Earth + Water</p>
             <span className="dosha-traits">Calm • Stable • Enduring</span>
+          </div>
+        </div>
+
+        <div className="features-section">
+          <h3>Explore Ayurvedic Wisdom</h3>
+          <div className="features-grid">
+            <div className="feature-card" onClick={() => onNavigate('quiz')}>
+              <div className="feature-icon">🧘‍♀️</div>
+              <h4>Prakriti Analysis</h4>
+              <p>Take our comprehensive quiz to discover your unique constitution</p>
+              <button className="feature-btn">Start Quiz</button>
+            </div>
+            
+            <div className="feature-card" onClick={() => onNavigate('herbs')}>
+              <div className="feature-icon">🌿</div>
+              <h4>Herbs Guide</h4>
+              <p>Explore Ayurvedic herbs and their effects on different doshas</p>
+              <button className="feature-btn">Explore Herbs</button>
+            </div>
+            
+            <div className="feature-card" onClick={() => onNavigate('yoga')}>
+              <div className="feature-icon">🧘</div>
+              <h4>Yoga Practices</h4>
+              <p>Discover yoga sequences tailored to your dosha type</p>
+              <button className="feature-btn">Practice Yoga</button>
+            </div>
           </div>
         </div>
 

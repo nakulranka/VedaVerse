@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "VedaVerse - AI-Powered Ayurvedic Healthcare Platform",
   "main": "index.js",
-  "homepage": "https://nakulranka.github.io/VedaVerse",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

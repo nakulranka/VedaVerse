@@ -15,12 +15,31 @@
       "dest": "/static/$1"
     },
     {
-      "src": "/(.*\\.(?:css|js|json|ico|png|jpg|jpeg|gif|svg|woff|woff2))",
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/(.*\\.(css|js|json|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
       "dest": "/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json"
+        }
+      ]
     }
   ]
 }

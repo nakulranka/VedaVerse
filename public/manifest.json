@@ -1,6 +1,6 @@
 {
-  "short_name": "Prakriti Analyzer",
-  "name": "Know Your Body Type - Prakriti Analysis",
+  "short_name": "VedaVerse",
+  "name": "VedaVerse - Divine Ayurvedic Wellness Platform",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,10 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#8B4513",
-  "background_color": "#FFF8E1"
+  "background_color": "#FFF8E1",
+  "scope": "/",
+  "orientation": "portrait"
 }

@@ -1,20 +1,29 @@
 {
   "version": 2,
   "name": "vedaverse",
-  "builds": [
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "devCommand": "npm start",
+  "installCommand": "npm install",
+  "framework": "create-react-app",
+  "rewrites": [
     {
-      "src": "build/**",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/(.*)",
-      "dest": "/build/$1"
-    },
-    {
-      "src": "/.*",
-      "dest": "/build/index.html"
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
-  ]
+  ],
+  "env": {
+    "GENERATE_SOURCEMAP": "false"
+  }
 }
